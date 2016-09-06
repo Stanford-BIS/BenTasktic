@@ -15,6 +15,13 @@ Tasks for November run
     - [ ] PTAT performance across corners
   - [ ] Layout
 
+## DAC
+  - [x] Schematic
+  - [ ] Layout
+    - [x] Analog core
+    - [ ] Trim metal
+    - [ ] Short and drive duplicate wires
+
 ## Voltage Buffer
   - [ ] Test and validate schematic
     - [x] Size transistors
