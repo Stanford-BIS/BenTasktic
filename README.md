@@ -30,4 +30,5 @@ Tasks for November run
 
 ## Neuron
 ### Synapse
+  - [ ] See if I can use MIM (1-8) cap, block all the metal up to 8 and get the same capacitance as the MOM (9-10).
 ### Soma
