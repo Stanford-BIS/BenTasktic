@@ -2,16 +2,15 @@
 
 # Braindrop
 
-Tasks for November run
+Tasks for (*hopefully :'-(* ) November run
 
 ## Master Bias Generator (PTAT)
   - [ ] Test and validate schematic
-    - [ ] Effect of cascode
     - [ ] Resistor value & dropped voltage
     - [ ] PSRR
-      - [ ] Analytic
-      - [ ] SPICE
-    - [ ] Generated current range
+      - [ ] SPICE (AC analysis)
+    - [ ] Generated current range (200pA stepped down to 100fA through four mirrors)
+      - [Note:] A single stage mirror needs about 25 Tx on each side to get 95% within +/- 10%. So, for about 1/15 gain per stage, we have a transistor ratio of ~ 375:25 per stage.
     - [ ] PTAT performance across corners
   - [ ] Layout
 
@@ -30,5 +29,6 @@ Tasks for November run
 
 ## Neuron
 ### Synapse
-  - [ ] See if I can use MIM (1-8) cap, block all the metal up to 8 and get the same capacitance as the MOM (9-10).
+  - [ ] See if I can use MOM (1-8) cap, block all the metal up to 8 and get the same capacitance as the MIM (9-10).
+  
 ### Soma
