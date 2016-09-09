@@ -56,6 +56,8 @@ Tasks for October run
     - [x] Finalize I_DC, +/- I_W range (70pA +- 65pA)
     - [ ] Finalize I_CM range (if synapse gain != 1)
     - [ ] Finalize capacitance (for tau <= 100ms and t_PE >= 20us)
+      - [ ] C_tau
+      - [ ] C_PE
     - [ ] Finalize initial transistor sizes (for mismatch), adjust if space available
   - [ ] Layout
   
