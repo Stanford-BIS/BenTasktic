@@ -46,6 +46,7 @@ Tasks for October run
     - Update 1 Synapse + 2x2 Soma tile
   - [ ] Layout
     - Export LEF
+
 ### Synapse
   - [ ] See if I can use MOM (1-8) cap, block all the metal up to 8 and get the same capacitance as the MIM (9-10).
   - [ ] Schematic
