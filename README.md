@@ -5,21 +5,20 @@
 Tasks for October run
 
 ## Master Bias Generator (PTAT)
-  - [ ] Test and validate schematic
-    - [ ] Finalize I_unit (inside the core FB circuit) [currently 200pA, but use 100pA if area allows]
-    - [x] Finalize I_out: 100fA & 1pA (along with V_CAS for each) as input to DAC
+  - [x] Test and validate schematic
+    - [x] Finalize I_unit (inside the core FB circuit) [1pA]
+    - [x] Finalize I_out: 1pA (along with V_CAS for each) as input to DAC
     - [x] Finalize resistance
-      - 3.4 MOhms & 50mV drop
+      - 4.x MOhms & 50mV drop
     - [x] PTAT performance across corners
       - Error w.r.t. PTAT < +/- 0.5% over 20-30C
-    - [ ] Finalize transistor sizes (for mismatch)
-      - *[Note] Gain per stage is 1/10 => 3 stages = 1/1000*
-        - *Last stage provides 0.5X (1X for 100pA reference) for 100fA*
-        - *Last stage provides 5X (1X from previous stage for 100pA reference) for 1pA*
+    - [x] Finalize transistor sizes (for mismatch)
+      - *[Note] Gain stages are 2.5n x 1/10x1/250 = 1pA
       - *[Note] A single stage mirror needs about 25 Tx on each side to get 95% within +/- 10%*
       - *[Note] Have models in Mathematica that need to be optimized*
-    - [ ] PSRR
-      - SPICE (AC analysis)
+    - [x] PSRR
+      - Small-signal analysis matches AC for mirrors.
+      - With the voltage buffer, the bias generator starts peaking around 10KHz and has 0dB PSRR beyond that.
   - [ ] Layout
 
 ## DAC
