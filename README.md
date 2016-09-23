@@ -5,6 +5,7 @@
 Tasks for October run
 
 ## Master Bias Generator (PTAT)
+  - [ ] Need startup circuit?
   - [x] Test and validate schematic
     - [x] Finalize I_unit (inside the core FB circuit) [1pA]
     - [x] Finalize I_out: 1pA (along with V_CAS for each) as input to DAC
@@ -28,8 +29,9 @@ Tasks for October run
       - [ ] Size global diode transistors (e.g., 4X if synapse's n-m = 4, add/subtract I_W from I_DC from two biases)
   - [ ] Layout
     - [x] Analog core
-    - [ ] Trim metal
-    - [ ] Short and drive duplicate wires
+    - [x] Trim metal
+    - [x] Short and drive duplicate wires
+    - [x] Provide power landing pads [in M3]
     - [ ] Export LEF (and merge in Voltage Buffer)
 
 ## Voltage Buffer
@@ -48,15 +50,16 @@ Tasks for October run
   - [ ] Plan global bias and power lines
 
 ### Synapse
-  - [ ] See if I can use MOM (1-8) cap, block all the metal up to 8 and get the same capacitance as the MIM (9-10).
+  - [ ] See if I can use MOM (1-5) cap, block all the metal up to 8 and get the same capacitance as the MIM (9-10).
+    - [x] Can use MOM for Synapse PE: 22.8fF with ~ 3.4𝜇mx4𝜇m area
   - [ ] Schematic
-    - [x] Finalize I_LK range (minimum I_LK = 100fA => maximum = 100pA)
-    - [ ] Finalize I_PE range (for t_PE >= 20us or 40us period)
-    - [x] Finalize I_DC, +/- I_W range (70pA +- 65pA)
+    - [ ] Finalize I_LK range (minimum I_LK = 100fA => maximum = 100pA)
+    - [x] Finalize I_PE range [**for t_PE >= 10𝜇s or 500us period, use 1000pA to 20pA**]
+    - [x] Finalize I_DC, +/- I_W range [**70pA +- 65pA**]
     - [ ] Finalize I_CM range (if synapse gain != 1)
-    - [ ] Finalize capacitance (for tau <= 100ms and t_PE >= 20us)
+    - [ ] Finalize capacitance (for tau <= 100ms and t_PE >= 20𝜇s)
       - [ ] C_tau
-      - [ ] C_PE
+      - [x] C_PE: MOM cap M3-M5, 22.8fF, ~ 3.4𝜇mx4𝜇m area
     - [ ] Finalize initial transistor sizes (for mismatch), adjust if space available
   - [ ] Layout
   
