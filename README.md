@@ -6,6 +6,13 @@ Tasks for October run
 
 ## Master Bias Generator (PTAT)
   - [ ] Need startup circuit?
+  - [ ] Work out Synapse EXC/DC/INH matching
+    - Three different DACs, not guaranteed to be matched
+    - But, the three DACs can be set independently
+    - May need to scale D by E/D and I by E/I and scale the two back at the output
+    - In this way, D and I's matching can be improved by using more DAC bits
+    - This way, single bits correct more for D and even more for I.
+    - [ ] Need to do the math.
   - [x] Test and validate schematic
     - [x] Finalize I_unit (inside the core FB circuit) [1pA]
     - [x] Finalize I_out: 1pA (along with V_CAS for each) as input to DAC
